@@ -9,8 +9,8 @@ import model.constants.Colour;
 public class Main {
     public static void main(String[] args) {
         Food meat = new Meat(5, 100.0);
-        Food redApples = new Apple(10, 50.0, Colour.red);
-        Food greenApples = new Apple(8, 60.0, Colour.green);
+        Food redApples = new Apple(10, 50.0, Colour.RED);
+        Food greenApples = new Apple(8, 60.0, Colour.GREEN);
         Food[] items = { meat, redApples, greenApples };
         ShoppingCart cart = new ShoppingCart(items);
         System.out.println("Общая сумма без скидки: " + cart.getTotalPriceWithoutDiscount() + " руб.");
